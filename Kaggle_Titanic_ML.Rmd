@@ -1,0 +1,27 @@
+---
+title: "Kaggle_Titanic_ML"
+author: "Nicolas Mollier"
+date: "8/18/2020"
+output: html_document
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r Packages, include = TRUE}
+library(tidyverse)
+```
+
+
+## Load the Data
+
+```{r Load the Data}
+titanic_train <- read.csv(file = "train.csv", header = TRUE)
+head(titanic_train) %>% knitr::kable()
+titanic_test <- read.csv(file = "test.csv", header = TRUE)
+
+```
+
+
+
